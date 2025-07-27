@@ -11,7 +11,7 @@ export default function Home() {
           <a href="#Contact">Contact</a>
         </nav>
         <div className={styles.hero}>
-          <h2 className={styles.header_text}>Hi, I'm Rehan </h2>
+          <h2 className={styles.header_text}>Hi, I'm <span className={styles.span_color}>Salman </span></h2>
           <h1 className={styles.sub_Title}>
             Software Engineer | Front-End Developer
           </h1>
@@ -54,7 +54,9 @@ export default function Home() {
               height={200}
             />
             <div className={styles.project_description}>
-              <h3>Project 1</h3>
+              <h3>
+                <span className={styles.span_color}>Project 1</span>
+              </h3>
               <p>
                 Description of project 1. Lorem ipsum dolor sit, amet
                 consectetur adipisicing elit. Libero voluptas dignissimos unde
@@ -80,7 +82,9 @@ export default function Home() {
               height={200}
             />
             <div className={styles.project_description}>
-              <h3>Project 1</h3>
+              <h3>
+                <span className={styles.span_color}>Project 1</span>
+              </h3>
               <p>
                 Description of project 1. Lorem ipsum dolor sit, amet
                 consectetur adipisicing elit. Libero voluptas dignissimos unde
@@ -106,7 +110,9 @@ export default function Home() {
               height={200}
             />
             <div className={styles.project_description}>
-              <h3>Project 1</h3>
+              <h3>
+                <span className={styles.span_color}>Project 1</span>
+              </h3>
               <p>
                 Description of project 1. Lorem ipsum dolor sit, amet
                 consectetur adipisicing elit. Libero voluptas dignissimos unde
@@ -124,10 +130,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+          
         </div>
       </section>
       <section className={styles.about}>
-        <h2 className={styles.about_header_text}>About Me</h2>
+        <h2 className={styles.about_header_text}>
+          <span className={styles.span_color}>About Me </span>
+        </h2>
         <p className={styles.about_text}>
           I am a passionate software engineer with a focus on front-end
           development. I love creating responsive and immersive user experiences
@@ -190,7 +199,9 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.contact} id="Contact">
-        <h2 className={styles.contact_header_text}>Get in touch</h2>
+        <h2 className={styles.contact_header_text}>
+          <span className={styles.span_color}>Get in touch </span>
+        </h2>
         <p className={styles.contact_text}>
           Reach me out on Linkedin or GitHub, or send me an email at
         </p>
@@ -199,16 +210,30 @@ export default function Home() {
             <Image src="/github.png" alt="Email" width={24} height={24} />
             mdsalmanurehan@gmail.com
           </a>
-          <a href="https://github.com/mohammedsrehan" target="_blank" className={styles.social_link}>
+          <a
+            href="https://github.com/mohammedsrehan"
+            target="_blank"
+            className={styles.social_link}
+          >
             <Image src="/github.png" alt="GitHub" width={24} height={24} />
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/mohammed-salmanuddin-rehan/" target="_blank" className={styles.social_link}>
+          <a
+            href="https://www.linkedin.com/in/mohammed-salmanuddin-rehan/"
+            target="_blank"
+            className={styles.social_link}
+          >
             <Image src="/linkedin.png" alt="LinkedIn" width={24} height={24} />
             Linkedin
           </a>
         </div>
       </section>
+      <footer className={styles.footer}>
+        <p className={styles.footer_text}>
+          &copy; {new Date().getFullYear()} Designed and Developed by Salman. All rights
+          reserved.
+        </p>
+      </footer>
     </div>
   );
 }
