@@ -4,92 +4,211 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <section className={styles.landing}>
+        <nav className={styles.nav}>
+          <a href="#projects">Projects</a>
+          <a href="#About">About </a>
+          <a href="#Contact">Contact</a>
+        </nav>
+        <div className={styles.hero}>
+          <h2 className={styles.header_text}>Hi, I'm Rehan </h2>
+          <h1 className={styles.sub_Title}>
+            Software Engineer | Front-End Developer
+          </h1>
+          <p className={styles.header_sentence}>
+            Transforming Designs into Responsive & Immersive Experiences
+          </p>
+          <div className={styles.button_container}>
+            <button className={styles.button}>Projects</button>
+            <button className={styles.button}>Resume</button>
+          </div>
+          <div className={styles.socials}>
+            <a href="/github" target="_blank" className={styles.social_link}>
+              <Image src="/github.png" alt="GitHub" width={24} height={24} />
+              GitHub
+            </a>
+            <a href="/linkedin" target="_blank" className={styles.social_link}>
+              <Image
+                src="/linkedin.png"
+                alt="LinkedIn"
+                width={24}
+                height={24}
+              />
+              Linkedin
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className={styles.projects} id="projects">
+        <h2 className={styles.project_header_text}>Projects</h2>
+        <p className={styles.projects_subtitle}>
+          Discover the projects that highlight my skills and passion for
+          developing
+        </p>
+        <div className={styles.projects_list}>
+          <div className={styles.project_item}>
             <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/bg_image.png"
+              alt="Project 1"
+              width={300}
+              height={200}
             />
-            Deploy now
+            <div className={styles.project_description}>
+              <h3>Project 1</h3>
+              <p>
+                Description of project 1. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Libero voluptas dignissimos unde
+                pariatur maiores cum facilis autem consequuntur fugit atque!
+              </p>
+              <div className={styles.project_technologies}>
+                <Image src="/github.png" alt="React" width={24} height={24} />
+                <Image src="/github.png" alt="Next.js" width={24} height={24} />
+                <Image
+                  src="/github.png"
+                  alt="Tailwind CSS"
+                  width={24}
+                  height={24}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={styles.project_item}>
+            <Image
+              src="/bg_image.png"
+              alt="Project 1"
+              width={300}
+              height={200}
+            />
+            <div className={styles.project_description}>
+              <h3>Project 1</h3>
+              <p>
+                Description of project 1. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Libero voluptas dignissimos unde
+                pariatur maiores cum facilis autem consequuntur fugit atque!
+              </p>
+              <div className={styles.project_technologies}>
+                <Image src="/github.png" alt="React" width={24} height={24} />
+                <Image src="/github.png" alt="Next.js" width={24} height={24} />
+                <Image
+                  src="/github.png"
+                  alt="Tailwind CSS"
+                  width={24}
+                  height={24}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={styles.project_item}>
+            <Image
+              src="/bg_image.png"
+              alt="Project 1"
+              width={300}
+              height={200}
+            />
+            <div className={styles.project_description}>
+              <h3>Project 1</h3>
+              <p>
+                Description of project 1. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Libero voluptas dignissimos unde
+                pariatur maiores cum facilis autem consequuntur fugit atque!
+              </p>
+              <div className={styles.project_technologies}>
+                <Image src="/github.png" alt="React" width={24} height={24} />
+                <Image src="/github.png" alt="Next.js" width={24} height={24} />
+                <Image
+                  src="/github.png"
+                  alt="Tailwind CSS"
+                  width={24}
+                  height={24}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={styles.about}>
+        <h2 className={styles.about_header_text}>About Me</h2>
+        <p className={styles.about_text}>
+          I am a passionate software engineer with a focus on front-end
+          development. I love creating responsive and immersive user experiences
+          using modern web technologies. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Obcaecati impedit nostrum dolore cum hic maiores
+          nihil fugit, ab nisi et sed quo doloremque illo possimus asperiores ut
+          deleniti blanditiis molestias velit, numquam deserunt ullam. Nulla
+          voluptates aspernatur beatae eum? Ullam eum aspernatur veritatis porro
+          praesentium! Tempora voluptatibus molestiae atque nulla expedita nam
+          laudantium ratione numquam tempore! Fuga nemo aliquam quas incidunt
+          cum, quae culpa adipisci? Rem magnam, minima excepturi soluta,
+          temporibus labore expedita ut dolor vero similique doloribus eligendi.
+          Magni esse assumenda error dolore! Necessitatibus, deleniti
+          perferendis obcaecati rem perspiciatis culpa distinctio non tempora?
+          Repellat doloribus inventore temporibus magnam illum?
+        </p>
+        <div className={styles.skills}>
+          <h3 className={styles.skills_header}>Technologies</h3>
+          <ul className={styles.skills_list}>
+            <li className={styles.skill_item}>
+              <Image
+                src="/github.png"
+                alt="JavaScript"
+                width={24}
+                height={24}
+              />
+              JavaScript
+            </li>
+            <li className={styles.skill_item}>
+              <Image src="/github.png" alt="React" width={24} height={24} />
+              React
+            </li>
+            <li className={styles.skill_item}>
+              <Image src="/github.png" alt="Next.js" width={24} height={24} />
+              Next.js
+            </li>
+            <li className={styles.skill_item}>
+              <Image
+                src="/github.png"
+                alt="Tailwind CSS"
+                width={24}
+                height={24}
+              />
+              Tailwind CSS
+            </li>
+            <li className={styles.skill_item}>
+              <Image src="/github.png" alt="Node.js" width={24} height={24} />
+              Node.js
+            </li>
+            <li className={styles.skill_item}>
+              <Image
+                src="/github.png"
+                alt="Express.js"
+                width={24}
+                height={24}
+              />
+              Express.js
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className={styles.contact} id="Contact">
+        <h2 className={styles.contact_header_text}>Get in touch</h2>
+        <p className={styles.contact_text}>
+          Reach me out on Linkedin or GitHub, or send me an email at
+        </p>
+        <div className={styles.contact_socials}>
+          <a href="mailto:rehan@gmail.com" className={styles.social_link}>
+            <Image src="/github.png" alt="Email" width={24} height={24} />
+            mdsalmanurehan@gmail.com
           </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
+          <a href="https://github.com/mohammedsrehan" target="_blank" className={styles.social_link}>
+            <Image src="/github.png" alt="GitHub" width={24} height={24} />
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/mohammed-salmanuddin-rehan/" target="_blank" className={styles.social_link}>
+            <Image src="/linkedin.png" alt="LinkedIn" width={24} height={24} />
+            Linkedin
           </a>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
     </div>
   );
 }
