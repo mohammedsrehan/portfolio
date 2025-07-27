@@ -133,7 +133,7 @@ export default function Home() {
           
         </div>
       </section>
-      <section className={styles.about}>
+      <section className={styles.about} id="About">
         <h2 className={styles.about_header_text}>
           <span className={styles.span_color}>About Me </span>
         </h2>
