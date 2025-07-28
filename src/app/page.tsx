@@ -11,7 +11,9 @@ export default function Home() {
           <a href="#Contact">Contact</a>
         </nav>
         <div className={styles.hero}>
-          <h2 className={styles.header_text}>Hi, I'm <span className={styles.span_color}>Salman </span></h2>
+          <h2 className={styles.header_text}>
+            Hi, I'm <span className={styles.span_color}>Salman </span>
+          </h2>
           <h1 className={styles.sub_Title}>
             Software Engineer | Front-End Developer
           </h1>
@@ -130,7 +132,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
         </div>
       </section>
       <section className={styles.about} id="About">
@@ -138,62 +139,56 @@ export default function Home() {
           <span className={styles.span_color}>About Me </span>
         </h2>
         <p className={styles.about_text}>
-          I am a passionate software engineer with a focus on front-end
-          development. I love creating responsive and immersive user experiences
-          using modern web technologies. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Obcaecati impedit nostrum dolore cum hic maiores
-          nihil fugit, ab nisi et sed quo doloremque illo possimus asperiores ut
-          deleniti blanditiis molestias velit, numquam deserunt ullam. Nulla
-          voluptates aspernatur beatae eum? Ullam eum aspernatur veritatis porro
-          praesentium! Tempora voluptatibus molestiae atque nulla expedita nam
-          laudantium ratione numquam tempore! Fuga nemo aliquam quas incidunt
-          cum, quae culpa adipisci? Rem magnam, minima excepturi soluta,
-          temporibus labore expedita ut dolor vero similique doloribus eligendi.
-          Magni esse assumenda error dolore! Necessitatibus, deleniti
-          perferendis obcaecati rem perspiciatis culpa distinctio non tempora?
-          Repellat doloribus inventore temporibus magnam illum?
+          Computer Science Engineer with competencies in web development and
+          cloud computing, with hands on experience in designing and developing
+          websites and. Possess experience in 5+ programming languages,
+          particularly skilled in JavaScript, React and Python. Pursuing a
+          Master's in Computer Science.
         </p>
         <div className={styles.skills}>
           <h3 className={styles.skills_header}>Technologies</h3>
           <ul className={styles.skills_list}>
             <li className={styles.skill_item}>
-              <Image
-                src="/github.png"
-                alt="JavaScript"
-                width={24}
-                height={24}
-              />
+              <Image src="/js.png" alt="JavaScript" width={24} height={24} />
               JavaScript
             </li>
             <li className={styles.skill_item}>
-              <Image src="/github.png" alt="React" width={24} height={24} />
+              <Image src="/react.png" alt="React" width={24} height={24} />
               React
             </li>
             <li className={styles.skill_item}>
-              <Image src="/github.png" alt="Next.js" width={24} height={24} />
+              <Image src="/nextjs.svg" alt="Next.js" width={24} height={24} />
               Next.js
             </li>
             <li className={styles.skill_item}>
               <Image
                 src="/github.png"
-                alt="Tailwind CSS"
+                alt="Git"
                 width={24}
                 height={24}
               />
-              Tailwind CSS
-            </li>
-            <li className={styles.skill_item}>
-              <Image src="/github.png" alt="Node.js" width={24} height={24} />
-              Node.js
+              Git
             </li>
             <li className={styles.skill_item}>
               <Image
-                src="/github.png"
-                alt="Express.js"
+                src="/programing.png"
+                alt="Node.js"
                 width={24}
                 height={24}
               />
-              Express.js
+              Node.js
+            </li>
+            <li className={styles.skill_item}>
+              <Image src="/python.png" alt="python" width={24} height={24} />
+              Python
+            </li>
+            <li className={styles.skill_item}>
+              <Image src="/materialUI.png" alt="Material UI" width={24} height={24} />
+              Material UI
+            </li>
+            <li className={styles.skill_item}>
+              <Image src="/redux.svg" alt="Redux Toolkit" width={24} height={24} />
+              Redux Toolkit
             </li>
           </ul>
         </div>
@@ -207,7 +202,7 @@ export default function Home() {
         </p>
         <div className={styles.contact_socials}>
           <a href="mailto:rehan@gmail.com" className={styles.social_link}>
-            <Image src="/github.png" alt="Email" width={24} height={24} />
+            <Image src="/email.svg" alt="Email" width={24} height={24} />
             mdsalmanurehan@gmail.com
           </a>
           <a
@@ -230,8 +225,8 @@ export default function Home() {
       </section>
       <footer className={styles.footer}>
         <p className={styles.footer_text}>
-          &copy; {new Date().getFullYear()} Designed and Developed by Salman. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Designed and Developed by Salman.
+          All rights reserved.
         </p>
       </footer>
     </div>
