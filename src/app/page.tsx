@@ -21,8 +21,12 @@ export default function Home() {
             Transforming Designs into Responsive & Immersive Experiences
           </p>
           <div className={styles.button_container}>
-            <button className={styles.button}>Projects</button>
-            <button className={styles.button}>Resume</button>
+            <button className={styles.button}>
+              <a href="#projects">Projects</a>
+            </button>
+            <a href="firebase.svg" target="_blank" rel="noopener noreferrer">
+              <button className={styles.button}>Resume</button>
+            </a>
           </div>
           <div className={styles.socials}>
             <a href="/github" target="_blank" className={styles.social_link}>
@@ -51,25 +55,123 @@ export default function Home() {
           <div className={styles.project_item}>
             <Image
               src="/bg_image.png"
-              alt="Project 1"
+              alt="IEEE Student Branch Website"
               width={300}
               height={200}
             />
             <div className={styles.project_description}>
               <h3>
-                <span className={styles.span_color}>Project 1</span>
+                <a href="https://github.com/ieeensakcet/ieee-website-2.0">
+                  <span className={styles.span_color}>
+                    IEEE Student Branch Website
+                  </span>
+                </a>
               </h3>
               <p>
-                Description of project 1. Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Libero voluptas dignissimos unde
-                pariatur maiores cum facilis autem consequuntur fugit atque!
+                This project showcases the IEEE Website, a dynamic and
+                interactive online platform I developed to serve as the official
+                digital presence for an IEEE student branch/section. The website
+                aims to engage members, disseminate information, and foster a
+                vibrant community.
               </p>
+              <ul className={styles.project_features}>
+                <li>
+                  <strong>Key Features:</strong>
+                </li>
+                <li>
+                  Designed and implemented a responsive and user-friendly
+                  interface to enhance member engagement.
+                </li>
+                <li>
+                  Incorporated features for easily updating news, events, and
+                  other relevant content.
+                </li>
+                <li>
+                  Utilized a modular approach, building reusable components for
+                  efficient development and scalability.
+                </li>
+              </ul>
               <div className={styles.project_technologies}>
-                <Image src="/github.png" alt="React" width={24} height={24} />
-                <Image src="/github.png" alt="Next.js" width={24} height={24} />
+                <Image src="/js.png" alt="javascript" width={24} height={24} />
+                <Image src="/nextjs.svg" alt="Next.js" width={24} height={24} />
+                <Image src="/github.png" alt="Git" width={24} height={24} />
                 <Image
-                  src="/github.png"
-                  alt="Tailwind CSS"
+                  src="/materialUI.png"
+                  alt="Material UI"
+                  width={24}
+                  height={24}
+                />
+                <Image
+                  src="/redux.svg"
+                  alt="Redux Toolkit"
+                  width={24}
+                  height={24}
+                />
+                <Image
+                  src="/firebase.svg"
+                  alt="Firebase"
+                  width={24}
+                  height={24}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={styles.project_item}>
+            <Image
+              src="/bg_image.png"
+              alt="Bismillah Collection"
+              width={300}
+              height={200}
+            />
+            <div className={styles.project_description}>
+              <h3>
+                <span className={styles.span_color}>
+                  E-commerce Website (Bismillah Collection)
+                </span>
+              </h3>
+              <p>
+                Developed a modern, responsive e-commerce platform for
+                "Bismillah Collection". The primary goal was to establish a
+                strong online presence, facilitate direct-to-consumer sales, and
+                provide an intuitive, engaging shopping experience for
+                customers.
+              </p>
+              <ul className={styles.project_features}>
+                <li>
+                  <strong>Key Features:</strong>
+                </li>
+                <li>
+                  Developed a responsive e-commerce platform for Bismillah
+                  Collection to expand their online presence, streamline sales,
+                  and enhance customer shopping experience
+                </li>
+                <li>
+                  Added features such as dynamic product listings and user
+                  authentication.
+                </li>
+                <li>
+                  Built a secure admin panel for "Bismillah Collection" staff to
+                  manage product inventory, process orders, and update content.
+                </li>
+              </ul>
+              <div className={styles.project_technologies}>
+                <Image
+                  src="/ts_logo.svg"
+                  alt="TypeScript"
+                  width={24}
+                  height={24}
+                />
+                <Image src="/nextjs.svg" alt="Next.js" width={24} height={24} />
+                <Image src="/github.png" alt="Git" width={24} height={24} />
+                <Image
+                  src="/materialUI.png"
+                  alt="Material UI"
+                  width={24}
+                  height={24}
+                />
+                <Image
+                  src="/firebase.svg"
+                  alt="Firebase"
                   width={24}
                   height={24}
                 />
@@ -85,51 +187,102 @@ export default function Home() {
             />
             <div className={styles.project_description}>
               <h3>
-                <span className={styles.span_color}>Project 1</span>
+                <span className={styles.span_color}>
+                  Reminder Web Application
+                </span>
               </h3>
               <p>
-                Description of project 1. Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Libero voluptas dignissimos unde
-                pariatur maiores cum facilis autem consequuntur fugit atque!
+                I developed this lightweight web application to address the
+                common challenge of forgotten tasks and missed appointments,
+                aiming to boost personal and team productivity. My core
+                objective was to create a simple, intuitive platform for users
+                to schedule timely reminders, initially focusing on email
+                notifications with a clear path for future SMS integration.
               </p>
+              <ul className={styles.project_features}>
+                <li>
+                  <strong>Key Features:</strong>
+                </li>
+                <li>
+                  Lets users easily set up reminders by entering the recipient,
+                  message, and time
+                </li>
+                <li>
+                  Automatically sends reminders at the right time using
+                  background functions
+                </li>
+                <li>
+                  Shows all scheduled reminders in a clean, organized dashboard
+                </li>
+                <li>
+                  Provides instant feedback when fields are missing or inputs
+                  are invalid
+                </li>
+              </ul>
               <div className={styles.project_technologies}>
-                <Image src="/github.png" alt="React" width={24} height={24} />
-                <Image src="/github.png" alt="Next.js" width={24} height={24} />
+                <Image src="/js.png" alt="JavaScript" width={24} height={24} />
+                <Image src="/react.png" alt="React" width={24} height={24} />
+                <Image src="/nextjs.svg" alt="Next.js" width={24} height={24} />
+                <Image src="/github.png" alt="Github" width={24} height={24} />
                 <Image
-                  src="/github.png"
-                  alt="Tailwind CSS"
+                  src="/firebase.svg"
+                  alt="Firebase"
                   width={24}
                   height={24}
                 />
               </div>
             </div>
           </div>
-          <div className={styles.project_item}>
-            <Image
-              src="/bg_image.png"
-              alt="Project 1"
-              width={300}
-              height={200}
-            />
-            <div className={styles.project_description}>
-              <h3>
-                <span className={styles.span_color}>Project 1</span>
-              </h3>
-              <p>
-                Description of project 1. Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Libero voluptas dignissimos unde
-                pariatur maiores cum facilis autem consequuntur fugit atque!
-              </p>
-              <div className={styles.project_technologies}>
-                <Image src="/github.png" alt="React" width={24} height={24} />
-                <Image src="/github.png" alt="Next.js" width={24} height={24} />
-                <Image
-                  src="/github.png"
-                  alt="Tailwind CSS"
-                  width={24}
-                  height={24}
-                />
-              </div>
+        </div>
+      </section>
+      <section className={styles.opensource}>
+        <h2 className={styles.opensource_header_text}>
+          Open Source Contributions
+        </h2>
+        <div className={styles.project_item}>
+          <Image
+            src="/bg_image.png"
+            alt="IEEE Student Branch Website"
+            width={300}
+            height={200}
+          />
+          <div className={styles.project_description}>
+            <h3>
+              <a href="https://github.com/mohammedsrehan/coding-space">
+                <span className={styles.span_color}>Coding Space </span>
+              </a>
+            </h3>
+            <p>
+              CodingSpace is the platform where the platform aim to provide lots
+              of different real-world UI-based challenges that can help
+              developers to improve their web and mobile development skills.
+            </p>
+            <ul className={styles.project_features}>
+              <li>
+                <strong>Key Features:</strong>
+              </li>
+              <li>
+                I have contributed to the Coding Space project, by adding
+                responsiveness to the website.
+              </li>
+              <li>
+                Reduced layout bugs and visual overflow issues on small screens
+              </li>
+              <li>
+                Improved mobile usability with adaptive layouts
+                and media queries
+              </li>
+            </ul>
+            <div className={styles.project_technologies}>
+              <Image src="/js.png" alt="javascript" width={24} height={24} />
+              <Image src="/github.png" alt="Git" width={24} height={24} />
+              <Image
+                src="/tailwind.svg"
+                alt="Tailwind CSS"
+                width={24}
+                height={24}
+              />
+              <Image src="/react.png" alt="React" width={24} height={24} />
             </div>
           </div>
         </div>
@@ -161,12 +314,7 @@ export default function Home() {
               Next.js
             </li>
             <li className={styles.skill_item}>
-              <Image
-                src="/github.png"
-                alt="Git"
-                width={24}
-                height={24}
-              />
+              <Image src="/github.png" alt="Git" width={24} height={24} />
               Git
             </li>
             <li className={styles.skill_item}>
@@ -183,12 +331,31 @@ export default function Home() {
               Python
             </li>
             <li className={styles.skill_item}>
-              <Image src="/materialUI.png" alt="Material UI" width={24} height={24} />
+              <Image
+                src="/materialUI.png"
+                alt="Material UI"
+                width={24}
+                height={24}
+              />
               Material UI
             </li>
             <li className={styles.skill_item}>
-              <Image src="/redux.svg" alt="Redux Toolkit" width={24} height={24} />
+              <Image
+                src="/redux.svg"
+                alt="Redux Toolkit"
+                width={24}
+                height={24}
+              />
               Redux Toolkit
+            </li>
+            <li className={styles.skill_item}>
+              <Image
+                src="/firebase.svg"
+                alt="Firebase"
+                width={24}
+                height={24}
+              />
+              Firebase
             </li>
           </ul>
         </div>
