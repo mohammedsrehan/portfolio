@@ -24,16 +24,16 @@ export default function Home() {
             <button className={styles.button}>
               <a href="#projects">Projects</a>
             </button>
-            <a href="firebase.svg" target="_blank" rel="noopener noreferrer">
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
               <button className={styles.button}>Resume</button>
             </a>
           </div>
           <div className={styles.socials}>
-            <a href="/github" target="_blank" className={styles.social_link}>
+            <a href="https://github.com/mohammedsrehan/" target="_blank" className={styles.social_link}>
               <Image src="/github.png" alt="GitHub" width={24} height={24} />
               GitHub
             </a>
-            <a href="/linkedin" target="_blank" className={styles.social_link}>
+            <a href="https://www.linkedin.com/in/mohammed-salmanuddin-rehan/" target="_blank" className={styles.social_link}>
               <Image
                 src="/linkedin.png"
                 alt="LinkedIn"
@@ -54,41 +54,67 @@ export default function Home() {
         <div className={styles.projects_list}>
           <div className={styles.project_item}>
             <Image
-              src="/bg_image.png"
+              src="/ieee.png"
               alt="IEEE Student Branch Website"
               width={300}
               height={200}
             />
+
             <div className={styles.project_description}>
-              <h3>
-                <a href="https://github.com/ieeensakcet/ieee-website-2.0">
-                  <span className={styles.span_color}>
-                    IEEE Student Branch Website
-                  </span>
+              <h3 className={styles.span_color}>IEEE Student Branch Website</h3>
+              <div className={styles.project_links}>
+                <a
+                  href="https://ieee-website-2-0-9w3r8coz9-mohammedrehan275.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  &#128279; Live Site
                 </a>
-              </h3>
+                <a
+                  href="https://github.com/ieeensakcet/ieee-website-2.0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  &#128279; Source Code
+                </a>
+              </div>
               <p>
-                This project showcases the IEEE Website, a dynamic and
-                interactive online platform I developed to serve as the official
-                digital presence for an IEEE student branch/section. The website
-                aims to engage members, disseminate information, and foster a
-                vibrant community.
+                A dynamic, multi-functional website built for the IEEE Student
+                Branch at Nawab Shah Alam Khan College of Engineering and
+                Technology, designed to manage events, engage students, and
+                provide an interactive experience.
               </p>
               <ul className={styles.project_features}>
                 <li>
                   <strong>Key Features:</strong>
                 </li>
                 <li>
-                  Designed and implemented a responsive and user-friendly
-                  interface to enhance member engagement.
+                  Event Management System: Developed a full-fledged event system
+                  where users can view, register, and review past and upcoming
+                  events.
                 </li>
                 <li>
-                  Incorporated features for easily updating news, events, and
-                  other relevant content.
+                  Admin Panel: Created a secure admin dashboard to manage events,
+                  members, content, and feedback — with role-based access.
                 </li>
                 <li>
-                  Utilized a modular approach, building reusable components for
-                  efficient development and scalability.
+                  Multi-Language Support: Implemented language translation using
+                  i18n, allowing the site to be viewed in multiple languages for
+                  wider accessibility.
+                </li>
+                <li>
+                  Event Scheduling with Cloud Functions: Used Firebase Cloud
+                  Functions to automate event announcements based on scheduled
+                  dates.
+                </li>
+                <li>
+                  Chatbot Integration: Integrated a chatbot to answer frequently
+                  asked questions about IEEE, events, and joining instructions.
+                </li>
+                <li>
+                  Responsive Design: Built a fully responsive and
+                  mobile-friendly UI to ensure a smooth experience across
+                  devices.
                 </li>
               </ul>
               <div className={styles.project_technologies}>
@@ -118,17 +144,93 @@ export default function Home() {
           </div>
           <div className={styles.project_item}>
             <Image
-              src="/bg_image.png"
+              src="/cov-19.png"
+              alt="Cov-19 Updated with Live News Feed"
+              width={300}
+              height={200}
+            />
+            <div className={styles.project_description}>
+              <h3 className={styles.span_color}>
+                Covid-19 Updates with Live News Feed
+              </h3>
+              <div className={styles.project_links}>
+                <a
+                  href="https://github.com/mohammedsrehan/cov-19-updates"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  &#128279; Source Code
+                </a>
+              </div>
+              <p>
+                Built a real-time global COVID tracker with interactive map
+                visualizations, searchable data tables, and a live news section.
+                Integrated multiple APIs and developed dynamic front-end
+                features for improved data exploration.
+              </p>
+              <ul className={styles.project_features}>
+                <li>
+                  <strong>Key Features:</strong>
+                </li>
+                <li>
+                  Integrated Real-Time COVID-19 APIs to fetch live case counts
+                  and news data
+                </li>
+                <li>
+                  Implemented Interactive Map using like Leaflet to show dynamic
+                  case data per country
+                </li>
+                <li>
+                  Added Live News Section by integrating a secondary API to
+                  display latest global news related to COVID-19
+                </li>
+              </ul>
+              <div className={styles.project_technologies}>
+                <Image src="/js.png" alt="JavaScript" width={24} height={24} />
+                <Image src="/react.png" alt="react.js" width={24} height={24} />
+                <Image src="/github.png" alt="Git" width={24} height={24} />
+                <Image
+                  src="/materialUI.png"
+                  alt="Material UI"
+                  width={24}
+                  height={24}
+                />
+                <Image
+                  src="/firebase.svg"
+                  alt="Firebase"
+                  width={24}
+                  height={24}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={styles.project_item}>
+            <Image
+              src="/ecommerce.png"
               alt="Bismillah Collection"
               width={300}
               height={200}
             />
             <div className={styles.project_description}>
-              <h3>
-                <span className={styles.span_color}>
+              <h3 className={styles.span_color}>
                   E-commerce Website (Bismillah Collection)
-                </span>
               </h3>
+              <div className={styles.project_links}>
+                <a
+                  href="https://bismillahcollection.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  &#128279; Live Site
+                </a>
+                <a
+                  href="https://github.com/mohammedsrehan/clothing_brand"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  &#128279; Source Code
+                </a>
+              </div>
               <p>
                 Developed a modern, responsive e-commerce platform for
                 "Bismillah Collection". The primary goal was to establish a
@@ -180,17 +282,22 @@ export default function Home() {
           </div>
           <div className={styles.project_item}>
             <Image
-              src="/bg_image.png"
-              alt="Project 1"
+              src="/reminder.png"
+              alt="Reminder Web Application"
               width={300}
               height={200}
             />
             <div className={styles.project_description}>
-              <h3>
-                <span className={styles.span_color}>
-                  Reminder Web Application
-                </span>
-              </h3>
+              <h3 className={styles.span_color}>Reminder Web Application</h3>
+              <div className={styles.project_links}>
+                <a
+                  href="https://github.com/mohammedsrehan/reminder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  &#128279; Source Code
+                </a>
+              </div>
               <p>
                 I developed this lightweight web application to address the
                 common challenge of forgotten tasks and missed appointments,
@@ -241,40 +348,51 @@ export default function Home() {
         </h2>
         <div className={styles.project_item}>
           <Image
-            src="/bg_image.png"
-            alt="IEEE Student Branch Website"
+            src="/frontend_pro.png"
+            alt="Frontend Pro"
             width={300}
             height={200}
           />
           <div className={styles.project_description}>
-            <h3>
-              <a href="https://github.com/mohammedsrehan/coding-space">
-                <span className={styles.span_color}>Coding Space </span>
+            <h3 className={styles.span_color}>Frontend Pro</h3>
+            <div className={styles.project_links}>
+              <a
+                href="https://github.com/mohammedsrehan/coding-space"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                &#128279; Source Code
               </a>
-            </h3>
+            </div>
             <p>
-              CodingSpace is the platform where the platform aim to provide lots
-              of different real-world UI-based challenges that can help
-              developers to improve their web and mobile development skills.
+              Frontend Pro (formerly "Coding Space") is the platform where the
+              platform aim to provide lots of different real-world UI-based
+              challenges that can help developers to improve their web and
+              mobile development skills.
             </p>
             <ul className={styles.project_features}>
               <li>
                 <strong>Key Features:</strong>
               </li>
               <li>
-                I have contributed to the Coding Space project, by adding
+                I have contributed to the Frontend Pro project, by adding
                 responsiveness to the website.
               </li>
               <li>
                 Reduced layout bugs and visual overflow issues on small screens
               </li>
               <li>
-                Improved mobile usability with adaptive layouts
-                and media queries
+                Improved mobile usability with adaptive layouts and media
+                queries
               </li>
             </ul>
             <div className={styles.project_technologies}>
-              <Image src="/js.png" alt="javascript" width={24} height={24} />
+              <Image
+                src="/ts_logo.svg"
+                alt="Typescript"
+                width={24}
+                height={24}
+              />
               <Image src="/github.png" alt="Git" width={24} height={24} />
               <Image
                 src="/tailwind.svg"
@@ -304,6 +422,15 @@ export default function Home() {
             <li className={styles.skill_item}>
               <Image src="/js.png" alt="JavaScript" width={24} height={24} />
               JavaScript
+            </li>
+            <li className={styles.skill_item}>
+              <Image
+                src="/ts_logo.svg"
+                alt="TypeScript"
+                width={24}
+                height={24}
+              />
+              TypeScript
             </li>
             <li className={styles.skill_item}>
               <Image src="/react.png" alt="React" width={24} height={24} />
@@ -369,7 +496,7 @@ export default function Home() {
         </p>
         <div className={styles.contact_socials}>
           <a href="mailto:rehan@gmail.com" className={styles.social_link}>
-            <Image src="/email.svg" alt="Email" width={24} height={24} />
+            <Image src="/gmail.svg" alt="Email" width={24} height={24} />
             mdsalmanurehan@gmail.com
           </a>
           <a
